@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: cd6d1dcf03fabe74db0688151e68a135
+timeCreated: 1456636128
+licenseType: Free
+MonoImporter:
+  serializedVersion: 2
+  defaultReferences:
+  - audio: {instanceID: 0}
+  - obj: {fileID: 158928, guid: 2345fd66969c7114887474d2c9ce3e99, type: 2}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
