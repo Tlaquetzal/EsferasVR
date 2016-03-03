@@ -1,2 +1,0 @@
-# EsferasVR
-Proyecto para cardboard
