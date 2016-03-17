@@ -7,7 +7,7 @@ public class soundScript : MonoBehaviour {
 	public AudioSource audio;
 	float[] spectrum = new float[1024];
 	public GameObject obj;
-	public Color[] colorValue;
+
 
 
 	private float timeNow;
@@ -20,8 +20,6 @@ public class soundScript : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-
-			
 
 		audio.GetSpectrumData (spectrum, 1, FFTWindow.Hanning);
 
@@ -47,9 +45,6 @@ public class soundScript : MonoBehaviour {
 				if (numBalls > 50)
 					break;	
 				GameObject inst = Instantiate (obj);
-				int randomColor = (int)UnityEngine.Random.Range(0f,6.0f);
-				inst.GetComponent<Renderer>().material.color = colorValue[randomColor];
-
 				inst.transform.localScale = new Vector3 (100,100,100);
 				int rd = (int)UnityEngine.Random.value * 250;
 				inst.transform.position = new Vector3(Mathf.Log(sumas[0]*10,2)*neg(),(Mathf.Sin(sumas[2]*4000)*10+10),Mathf.Log(sumas[1]*3)*neg());
@@ -58,7 +53,6 @@ public class soundScript : MonoBehaviour {
 
 			timeNow = t;
 		}
-		print (numBalls);
 
 	}
 

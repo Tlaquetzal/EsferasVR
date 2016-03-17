@@ -16,7 +16,7 @@ public class cambioPiso : MonoBehaviour {
 	void OnCollisionEnter (Collision col)
 	{
 
-		col.gameObject.GetComponent<Renderer>().material.color = new Color(UnityEngine.Random.value, 
+		GetComponent<Renderer>().material.color = new Color(UnityEngine.Random.value, 
 			UnityEngine.Random.value, 
 			UnityEngine.Random.value);
 
